@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="app.css">
+    <title>Get overview and rating</title>
+
+    <nav class="navbar navbar-light bg-light justify-content-between">
+        <a class="navbar-brand">TMDb.</a>
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="searchMovie">
+            <button id="searchBtn" class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+        </form>
+
+    </nav>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <img id="headingImg" src="image/gg.png" class="img-fluid">
+            </div>
+            <div class="col">
+                <h1 id="topic">Search for Movies & TV shows with ratings.</h1>
+                <footer class="blockquote-footer">Data fetched from <cite title="Source Title">TMDb API</cite>
+                </footer>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="main">
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
